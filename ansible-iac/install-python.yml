@@ -1,0 +1,7 @@
+    - name: Install python
+      hosts: localhost
+      become: yes
+      roles:
+        - role: ansible-python
+          python_version: 3.12.3
+          python_verify_gpg_signature: true
